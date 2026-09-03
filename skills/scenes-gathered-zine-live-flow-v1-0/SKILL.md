@@ -3,7 +3,7 @@ name: scenes-gathered-zine-live-flow-v1-0
 description: "Run the complete Gathered Scenes workflow from a supplied photograph to a static poster, a scene-authored adaptive v0.2 flat paper-tear Apple Live Photo ZIP, and optional handoff of that ZIP to the local Live Photo Importer. Use when the user wants the full source-to-Live-Photo flow with a custom narrative tear path and broad rounded low-frequency contours; do not use for static-only posters, 3D paper curls, or motion inside the photographed scene."
 ---
 
-# 拾景纸刊实况全流程 v1.0
+# 拾景纸刊实况全流程 v1.0（实况版）
 
 Turn one supplied photograph into one importer-ready Live Photo ZIP through two strictly separated modules:
 
