@@ -7,19 +7,19 @@ description: "Run the complete Gathered Scenes workflow from a supplied photogra
 
 Turn one supplied photograph into one importer-ready Live Photo ZIP through two strictly separated modules:
 
-1. Create the finished poster with the frozen sibling skill `../scenes-gathered-zine-v1-9/SKILL.md`.
+1. Create the finished poster with the frozen bundled module `references/static-poster-v1-9/SKILL.md`.
 2. Animate only a flat covering sheet tearing away from that finished poster.
 3. Pair the exact final frame as an Apple Live Photo JPG/MOV pair.
 4. Package only that pair in one ZIP.
 5. When import is requested, hand the ZIP to “实况照片导入器” through macOS file-open and stop.
 
-Do not modify `scenes-gathered-zine-v1-9`. It remains the single source of truth for all static visual decisions.
+Do not modify the bundled `static-poster-v1-9` module. It remains the single source of truth for all static visual decisions.
 
 ## Trigger Modes
 
 - **Full flow / import:** source photo → v1.9 poster → Live ZIP → importer handoff.
 - **ZIP only:** source photo or finished v1.9 poster → Live ZIP with `--no-import`.
-- **Static only:** use `scenes-gathered-zine-v1-9` directly and stop; this orchestration skill is unnecessary.
+- **Static only:** follow `references/static-poster-v1-9/SKILL.md` directly and stop before animation.
 
 For the established full-flow workflow, skip preview movies, contact sheets, visual review gates, metadata reports, and approval pauses. Continue automatically unless a step returns an explicit error. The user performs the final visual check.
 
@@ -27,7 +27,7 @@ For the established full-flow workflow, skip preview movies, contact sheets, vis
 
 If the input is a raw photograph:
 
-1. Read and follow the complete sibling `../scenes-gathered-zine-v1-9/SKILL.md`.
+1. Read and follow the complete bundled module `references/static-poster-v1-9/SKILL.md`.
 2. Generate the orientation-matched poster using its required image-generation path.
 3. Save the flattened result inside the current project output directory.
 
