@@ -1,0 +1,4 @@
+interface:
+  display_name: "拾景纸刊实况全流程 v1.0"
+  short_description: "生成自定义叙事路径与圆钝波浪撕边的实况 ZIP"
+  default_prompt: "Use $scenes-gathered-zine-live-flow-v1-0 to create my frozen Gathered Scenes Zine poster, compose a 3–7 point narrative tear path from the finished image, build the Live Photo ZIP, and hand it to the local Live Photo Importer."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "拾景纸刊 v1.9"
+  short_description: "原图零修饰、源色渐隐插画与高饱和视线引导的纸像海报"
+  default_prompt: "Use $scenes-gathered-zine-v1-9 to turn this photo into an orientation-matched paper poster with an unchanged photographic anchor, simplified registered illustration whose source colors fade gradually from rich to quiet, one source-derived high-saturation eye-guide, and a natural pigment-dissolution boundary."
