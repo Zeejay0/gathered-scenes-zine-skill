@@ -61,6 +61,7 @@ def find_importer(explicit: Path | None) -> Path:
     candidates.extend([
         Path("/Applications/实况照片导入器.app"),
         Path.home() / "Applications/实况照片导入器.app",
+        Path(__file__).resolve().parent.parent / "assets/实况照片导入器.app",
     ])
 
     spotlight = subprocess.run(
@@ -76,7 +77,8 @@ def find_importer(explicit: Path | None) -> Path:
         if resolved.is_dir() and (resolved / "Contents/MacOS/LivePhotoImporter").is_file():
             return resolved
     raise FileNotFoundError(
-        "未找到“实况照片导入器.app”。可用 --importer-app 或 LIVE_PHOTO_IMPORTER_APP 指定路径。"
+        "未找到“实况照片导入器.app”。请确认 Skill 内置 assets 完整，"
+        "或用 --importer-app / LIVE_PHOTO_IMPORTER_APP 指定路径。"
     )
 
 

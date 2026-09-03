@@ -83,9 +83,11 @@ All render frames, unpaired media, and receipts remain temporary.
 
 When the user asks for the complete automated flow or asks to place the result in Photos, omit `--no-import`. Read `references/importer-handoff.md` and let the build script open the completed ZIP with bundle id `com.zeejay.live-photo-importer`.
 
+This skill includes the ready-to-run Apple-silicon macOS importer at `assets/实况照片导入器.app`. The build script checks an explicitly supplied app, the user's installed copy, and then this bundled copy automatically. Do not require a separate importer download.
+
 Do not simulate drag-and-drop and do not operate the Photos app. Successful submission of the ZIP to “实况照片导入器” is the stopping point. The importer owns pairing validation, permissions, Photos-library insertion, and later iCloud synchronization.
 
-If the importer cannot be found, keep the finished ZIP and report the handoff error. Do not regenerate the poster or animation. Use `--importer-app /absolute/path/实况照片导入器.app` only when its exact path is known.
+If the importer cannot be found, first verify that the bundled app exists and is intact. Otherwise keep the finished ZIP and report the handoff error. Do not regenerate the poster or animation. Use `--importer-app /absolute/path/实况照片导入器.app` only when another exact app path is known.
 
 ## Response Contract
 
