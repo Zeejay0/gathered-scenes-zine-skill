@@ -79,6 +79,12 @@
 保留人物与海岸线的关系，文字用中文。
 ```
 
+当用户在生成前明确要求保留原脸五官，或在生成后主动要求修复失真人脸时，该 Skill 还可以按需执行局部“原脸五官 + 统一风格”处理。默认实景拼贴流程与视觉规则不变，也不会自动运行人脸处理。
+
+```text
+用 $scenes-gathered-zine-v1-3 制作实景拼贴，保留原脸五官并统一整体风格。
+```
+
 [阅读完整 Skill](skills/scenes-gathered-zine-v1-3/SKILL.md)
 
 ### 02 · 影像蒸馏
@@ -156,6 +162,8 @@ mkdir -p ~/.codex/skills
 cp -R gathered-scenes-zine-skill/skills/scenes-gathered-zine-v1-3 ~/.codex/skills/
 cp -R gathered-scenes-zine-skill/skills/scene-distillation-zine-v1-3 ~/.codex/skills/
 ```
+
+实景拼贴默认无需额外依赖。只有明确使用可选的人脸协调功能时，才需按照[人脸协调环境说明](skills/scenes-gathered-zine-v1-3/references/face-harmonization-setup.md)安装本地依赖。
 
 如果 Skill 没有立即出现，请重启 Codex。
 

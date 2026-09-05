@@ -50,6 +50,12 @@ Use $scenes-gathered-zine-v1-3 to turn this photo into a Gathered Scenes poster.
 Preserve the relationship between the figure and the shoreline.
 ```
 
+When the user explicitly requests source-face preservation before generation, or asks to repair a distorted face afterward, this skill can run an optional local facial-feature harmonization pass. Its default workflow and visual rules remain unchanged, and face processing never runs automatically.
+
+```text
+Use $scenes-gathered-zine-v1-3 to create the collage, preserve the source facial features, and harmonize them with the finished style.
+```
+
 [Read the full skill](skills/scenes-gathered-zine-v1-3/SKILL.md)
 
 ### 02 · 影像蒸馏 / Scene Distillation
@@ -121,6 +127,8 @@ mkdir -p ~/.codex/skills
 cp -R gathered-scenes-zine-skill/skills/scenes-gathered-zine-v1-3 ~/.codex/skills/
 cp -R gathered-scenes-zine-skill/skills/scene-distillation-zine-v1-3 ~/.codex/skills/
 ```
+
+The default Gathered Scenes workflow has no additional runtime dependency. Install the [optional face-harmonization runtime](skills/scenes-gathered-zine-v1-3/references/face-harmonization-setup.md) only when that feature is explicitly requested.
 
 Restart Codex if the skills do not appear immediately. Upload a photograph, choose whether to preserve or distill the scene, and invoke the corresponding skill by name.
 
