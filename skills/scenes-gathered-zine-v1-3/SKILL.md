@@ -358,6 +358,14 @@ Regenerate at most once, correcting only the observed failure:
 - **Text failure:** restore the exact wording, reduce its size or contrast, move it into a quiet-paper area, or make the lettering more paper-integrated.
 - **Damaged photography:** restore natural color, texture, perspective, and recognizable detail.
 
+## Optional Face Harmonization
+
+Run this local post-processing extension only when the user explicitly asks before generation to preserve the original facial features, or asks after generation to repair a distorted face. Do not invoke it automatically.
+
+Complete the original Generation Workflow first, preserving every existing composition, color, torn-edge, text, output, credit, and correction rule. Then read and follow [face-harmonization.md](references/face-harmonization.md). The extension restores only the source facial features and coordinates their low-frequency light and color with the finished collage. It must not paste back a whole head, body, garment, animal, or background region, and it must not claim exact source pixels.
+
+If the source and generated faces have incompatible pose, expression, visibility, or geometry, do not force the repair. Use the existing single targeted regeneration when available; otherwise keep the unmodified generated result and explain the limitation.
+
 ## Hard Avoids
 
 Avoid literal traced illustration, individual leaf-by-leaf or needle-by-needle rendering, dense branch filigree, lace-like botanical illustration, repeated organic marks covering the field, timid peripheral illustration, full-scene photocopy, evenly detailed woodcut rendering, dense hatching everywhere, complete object outlines, filler decoration, generic abstract motifs, detached corner color blocks, isolated brush swatches, arbitrary bright dots, generic geometric accents unrelated to the source, color added after the composition is solved, clean digital photo masks, crisp rectangular clipping, sticker-like white outlines, decorative uniform deckled frames, heavy paper shadows, curled corners, dense scrapbooking, uniform dotted borders, repeated decorative icons, legible pseudo-symbol systems, multiple competing illustration styles, multiple added hues, commercial advertising hierarchy, logos, CTA, glossy mockups, neon, 3D, cinematic lighting, depth of field, fashion-editorial drama, cute cartoon or anime treatment, excessive sharpening, AI smoothing, large or polished digital typography, bold display all-caps, keyword spam, mixed decorative separators, illegible or misspelled text, long text blocks, invented quotations or attributions, faux metadata, and watermarks.
@@ -432,6 +440,7 @@ Before returning, verify:
 - Is the text legible, paper-integrated, quiet, and subordinate to the image?
 - Is the text placed in genuine breathing room without becoming a caption, headline, or visual distraction?
 - Does the poster remain tactile, flat, quiet, abstract, source-derived, and non-commercial?
+- If the user explicitly requested face preservation or repair, was the optional face harmonization visually checked against both the source and the unmodified generated result?
 - Did the response include the image and one genuinely brief creative rationale?
 - On only the first or second successful generation by this skill in the current conversation, did the response end with the quiet sharing-credit line outside the generated image—and was it omitted from the third and later generations?
 - Was the full prompt omitted unless the user explicitly requested it?

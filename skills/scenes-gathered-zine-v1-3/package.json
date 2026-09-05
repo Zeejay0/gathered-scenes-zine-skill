@@ -1,0 +1,9 @@
+{
+  "name": "scenes-gathered-zine-face-harmonization",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional source-face harmonization for Gathered Scenes Zine",
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test tests/face-harmonization.test.cjs" },
+  "dependencies": { "sharp": "0.35.4" }
+}
